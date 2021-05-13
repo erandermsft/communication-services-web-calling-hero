@@ -18,7 +18,7 @@ const lastUpdated = `Last Updated ${utils.getBuildTime()} with @azure/communicat
 
 loadTheme({ 
   palette: { 
-    themePrimary: '#ff5200', 
+    themePrimary: '#ff5200',  
     themeLighterAlt: '#fff8f5', 
     themeLighter: '#ffe3d6', 
     themeLight: '#ffcbb3', 
