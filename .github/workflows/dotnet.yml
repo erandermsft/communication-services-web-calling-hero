@@ -16,7 +16,7 @@ on:
 #
 # 2. Change these variables for your configuration:
 env:
-  AZURE_WEBAPP_NAME: acs-web    # set this to your application's name
+  AZURE_WEBAPP_NAME: acs-we-web    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: './Calling'      # set this to the path to your web app project, defaults to the repository root
   DOTNET_VERSION: '3.1.301'           # set this to the dot net version to use
   CI: false
@@ -50,4 +50,3 @@ jobs:
           app-name: ${{ env.AZURE_WEBAPP_NAME }} # Replace with your app name
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISHPROFILE  }} # Define secret variable in repository settings as per action documentation
           package: '${{ env.AZURE_WEBAPP_PACKAGE_PATH }}/myapp'
-          slot-name: acs-we-web
